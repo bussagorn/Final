@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 :root {
-  --main-darklg: #1d2635;
-  --main-dark: #161d29;
-  --primary-color: #2f80ec;
+  --main-darklg: #812695;
+  --main-dark: #c285f7;
+  --primary-color: #601da7;
   --main-light: #eeeeee;
   font-family: "Poppins", sans-serif;
 }
@@ -94,7 +94,7 @@ video {
   display: flex;
   flex-direction: column;
   flex: 0.3;
-  background-color: #242f41;
+  background: linear-gradient(to bottom, #c285f7, #f777e4);
 }
 
 .main__chat_window {

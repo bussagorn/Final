@@ -5,7 +5,7 @@ body {
 
 body {
   padding-top: 5rem;
-  background-color: #f5f5f5;
+  background: linear-gradient(to bottom, #c285f7, #f777e4);
 }
 
 .form-signin {
