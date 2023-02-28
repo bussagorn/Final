@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <title>Edit</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Webchat</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Profile <span class="sr-only"></span></a>
+                    <a class="nav-item nav-link active" href="/show">Showdata <span class="sr-only"></span></a>
+                    <a class="nav-item nav-link active" href="/logout">Logout <span class="sr-only"></span></a>
+                    
+                </div>
+            </div>
+        </nav>
+        <form action="/editdata/<%= model.ID %>" method="post">
+            <img class="mb-4" src="user.jpg" alt="" height="300">
+            <h1 class="h3 mb-3 fw-normal"><b>Register</b></h1>
+        
+            <div class="form-floating">
+              <input type="text" class="form-control" id="name" name="Username" value="<%= model.name %>" placeholder="name@example.com">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="email" value="<%= model.email %>" name="Email" placeholder="email">
+              <label for="floatingPassword">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="password" name="Password" placeholder="name@example.com">
+                <label for="floatingInput">Password</label>
+              </div>
+        
+            <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Submit</button>
+          </form>
+    </div>
+</body>
+</html>
